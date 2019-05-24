@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Scott Murray</title>
+        <style type = "text/css">
+            @media all
+            {
+                header { text-align: center; }
+                body   { background-image: url(ScottMurraySpace.jpg);
+                         background-color: black; }
+                h1     { color: blue;
+                         font-size: 20pt;
+                         font-family: arial, helvetica, sans-serif; }
+                h2     { color: blue;
+                         font-size: 16pt;
+                         font-family: arial, helvetica, sans-serif; }
+                p      { color: cyan; }
+                li     { color: red; }
+                
+                .floated { float: left;
+                           padding: .2em;
+                           border: .2em solid red;
+                           margin: .5em; }
+            }
+        
+            @media print
+            {
+                body   { background-color: white; }
+                h1     { color: black; }
+                h2     { color: black; }
+                p      { color: black; }
+                li     { color: black; }
+                
+                .floated { border: .2em solid black; }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <p><h1>Scott Murray: <a href = "mailto:11ceilingunlimited@gmail.com">11ceilingunlimited@gmail.com</a></h1></p>
+        </header>
+        
+        <section>
+            <img class = "floated" src = "Scott Murray Flood.jpg" width = "300" height = "300" alt = "Scott Murray in Flood">
+            <p>This is Scott Murray. I am shy and a bit socially awkward, but I am a nice person once you get to know me. I am currently in my fourth year at the University of Houston-Downtown and I am majoring in Computer Science and minoring in Math. I am thinking about studying machine learning for my senior project, but this may change over time and someone might recommend a different project for me. I don’t know what I will do after I graduate; I may either get a programming job or transfer to grad school at the normal University of Houston.</p>
+            <p>Since I live in Kingwood near Houston, Hurricane Harvey hit us and Kingwood got badly flooded. Thankfully my house didn’t flood (although it came close) and my family is safe. Most of the stores in Kingwood got flooded and they’ll most likely be closed for a long time for repairs. What’s really bad is several businesses had just opened on this one section of land and they quickly got ruined. I’m hoping that Kingwood can get repaired soon and everyone can get back to normal lives. I also really hope another storm like this doesn’t happen anytime soon, even with the several recent and strong hurricanes.</p><br>
+        </section>
+        
+        <section>
+            <p><h2>Some of my favorite things:</h2></p>
+            <ul>
+                <li>Music</li>
+                <ol>
+                    <li>Rush</li>
+                    <li>Pink Floyd</li>
+                    <li>Led Zeppelin</li>
+                    <li>Yes</li>
+                </ol>
+                <li>TV Shows</li>
+                <ol>
+                    <li>The Simpsons</li>
+                    <li>The Big Bang Theory</li>
+                    <li>Impractical Jokers</li>
+                    <li>Modern Family</li>
+                    <li>Cops</li>
+                </ol>
+                <li>Movies</li>
+                <ol>
+                    <li>Star Wars series</li>
+                    <li>Harry Potter series</li>
+                </ol>
+            </ul><br>
+        </section>
+        
+        <section>
+            <p><h2>Please fill out feedback so I can better improve my site:</h2></p>
+            <form method = "post" action = "Scott Murray Form.php">
+                <input type = "hidden" name = "recipient" value = "11ceilingunlimited@gmail.com">
+                <input type = "hidden" name = "subject" value = "Feedback Form">
+                <input type = "hidden" name = "redirect" value = "Scott Murray.html">
+            
+                <p><label>Name: <input name = "name" type = "text" size = "40" maxlength = "40"></label></p>
+                <p><label>Email: <input name = "email" type = "text" size = "40" maxlength = "40"></label></p>
+                <p><label>Comments:<br><textarea name = "comments" rows = "4" cols = "44"></textarea></label></p>
+                <p>
+                    <input type = "submit" value = "Submit">
+                    <input type = "reset" value = "Reset">
+                </p>
+            </form>
+        </section>
+    </body>
+</html>

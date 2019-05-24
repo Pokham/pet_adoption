@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.mySlides {display:none;}
+</style>
+ <script>
+        function validateForm(){
+          var x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+              alert("Email must be filled out");
+              return false;
+          }
+        }
+ </script>
+ 
+</head>
+<body>
+  <!--start container-->
+  <div id="container">
+    <!--start header-->
+    <header>
+      <!--start menu-->
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href = "friends.html">Friends</a></li>
+        </ul>
+      </nav>
+      <!--end menu-->
+      <!--end header-->
+    </header>
+    <!--start intro-->
+    <section id="intro">
+      <div class="w3-content w3-section" style="max-width:960px">
+        <img class="mySlides" src="images/bring-home.jpg" style="width:100%">
+        <img class="mySlides" src="images/HomeEntertainment.jpg" style="width:100%">
+        <img class="mySlides" src="images/AboutAdopt_1.jpg" style="width:100%">
+        <img class = "mySlides" src="images/HappyDog.jpg" style = "width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1;}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+    </script>
+    </section>
+    <!--end intro-->
+    <!--start holder-->
+
+  <div class="holder_content1">
+    <section class="group5">
+      <h1>Welcome</h1>
+      <article>
+        <h2>Our mission shall be to improve the quality of life of animals and to place them into loving and permanent homes through rescue, extraordinary and compassionate care and humane education. </h2>
+      </article>
+      <center>
+      <iframe width="600" height="400" src="https://www.youtube.com/embed/ao2A-eEIkA4" frameborder="0" gesture="media" allowfullscreen></iframe>
+      </center>
+    </section>
+  </div>
+    <!--end holder-->
+    <script src="/path/to/javascript/donate.js"></script>
+    <div class="donate"></div>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        
+        <input type="hidden" name="cmd" value="_donations">
+        <input type="hidden" name="business" value="saveapet@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="amount">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="cn" value="Add special instructions to the seller:">
+        <input type="hidden" name="no_shipping" value="2">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+        
+        <center>
+          <button class="btn bg-orange">Donate</button>
+        </center>
+      </form>
+   
+    <!--start holder-->
+    <div class="holder_content2">
+      <section class="group6">
+        <p><font size "4" color = "rgba(255,255,255,.4"></font></p>
+        <center>
+        <p><font size = "2" color = "white">Your donation will help hundreds of thousands of pets to be seen and adopted.</font></p>
+        </center>
+        <a class="photo_hover3" href="contact.html"><img src="images/home.png" width="190" height="130" alt=""></a>
+        <p>.</p>
+        <h4>Please contact us to add your organization to our collection of shelters</h4>
+      </section>
+    </div>
+    <!--end holder-->
+    <!--Shelter Database-->
+    <!--start holder-->
+    <div class="holder_content2">
+      <section class="group6">
+        <h3>Animal Shelters</h3>
+        <p><a href = "serverside/displayLocations.php">Click hear to display locations.</a></p>
+      </section>
+    </div>
+    <!--end holder-->
+  </div>
+  <!--end container-->
+  <!--start footer-->
+  <footer>
+    <div class="container">
+      <aside class="footer_left">
+        <h4>Pets <span><a href="https://www.petfinder.com">Find a Pet</a></span> <span><a href="https://rehome.adoptapet.com">Rehome a Pet</a></span> </h4>
+      </aside>
+      <aside class="footer_left">
+        <h4>Get Involved <span><a href="https://www.adoptapet.com/get-involved">Ways to Support</a></span> <span><a href="saveapet@gmail.com">Donate</a></span> </h4>
+      </aside>
+      <aside class="footer_left">
+        <h4>Shelters <span><a href="https://www.adoptapet.com/shelter/terms_conditions_signup.html">Sign Up</a></span> <span><a href="https://www.adoptapet.com/account/login/as_publicist">Log In</a></span> </h4>
+      </aside>
+      
+     
+      <aside class="footer_left" >
+        <h4> Sign up for Our Newsletter </h4>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <label>
+         <font size ="3" color = "white"> Email:</font>
+         <input email="email" type="email" placeholder="Email address"/>
+        </label>
+          <input type="submit" value="Subscribe"/>
+        </form>
+      </aside>
+     
+    
+     
+      
+    </div>
+  </footer>
+  <!--end footer-->
+
+
+  
+  
+</body>
+
+</html>
